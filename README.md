@@ -77,30 +77,38 @@ Always check input features carefully before training. Data leakage is silent bu
 ## 📈 Visual Analysis
 
 ### 1. Class Distribution
-Extremely imbalanced dataset requiring special attention.
+This plot shows the class distribution in the training data.  
+The dataset is heavily imbalanced — approximately 99.8% of transactions are normal and only 0.17% are fraudulent.  
+This imbalance makes fraud detection a challenging task, as standard models tend to favor the majority class without special handling.
 
-*([Class_distribution.png](https://github.com/KrrishKapoor/credit-card-fraud-detection/blob/main/Class_distribution.png))*
+![Image](https://github.com/user-attachments/assets/923f78d3-07dc-4c93-881a-27185cfe0117)
 
 ---
 
 ### 2. Confusion Matrix
-Balanced detection after threshold tuning — real-world usable.
+The confusion matrix summarizes the model's performance on the test set.  
+The Random Forest model successfully identifies most fraudulent transactions while maintaining a low number of false positives.  
+Balancing false positives and false negatives is crucial in real-world finance settings where missing frauds is very costly.
 
-*(Insert Confusion Matrix heatmap)*
+![Image](https://github.com/user-attachments/assets/8d867305-f294-435b-85a9-2f24831f725f)
 
 ---
 
 ### 3. Feature Importance
-Shows which patterns in transactions most strongly indicated fraud.
+This chart displays the most important features contributing to fraud detection.  
+Features V17, V12, and V14 were found to have the highest impact on model decisions.  
+Understanding key drivers helps finance teams interpret and trust model outputs and prioritize investigation criteria.
 
-*(Insert Feature Importance plot)*
+![Image](https://github.com/user-attachments/assets/2d7abf4d-89a8-4d7f-baaa-cf5130e18e35)
 
 ---
 
 ### 4. ROC Curve
-Model achieved strong separation, supporting threshold adjustment strategy.
+The ROC curve shows the trade-off between True Positive Rate (fraud detection) and False Positive Rate (false alarms) across different thresholds.  
+A high AUC score demonstrates the model's strong ability to distinguish between fraudulent and normal transactions.  
+This curve also supports the business recommendation to lower the threshold slightly to improve fraud capture without drastically increasing false alarms.
 
-![ROC Curve](roc_curve.png)
+![Image](https://github.com/user-attachments/assets/d670da90-60bc-48b6-9e41-9c5555713187)
 
 ---
 
