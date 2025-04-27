@@ -79,7 +79,7 @@ Always check input features carefully before training. Data leakage is silent bu
 ### 1. Class Distribution
 Extremely imbalanced dataset requiring special attention.
 
-*(Insert Class Distribution bar plot)*
+*([Class_distribution.png](https://github.com/KrrishKapoor/credit-card-fraud-detection/blob/main/Class_distribution.png))*
 
 ---
 
@@ -100,7 +100,7 @@ Shows which patterns in transactions most strongly indicated fraud.
 ### 4. ROC Curve
 Model achieved strong separation, supporting threshold adjustment strategy.
 
-*(Insert ROC Curve)*
+![ROC Curve](roc_curve.png)
 
 ---
 
