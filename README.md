@@ -1,8 +1,8 @@
-# Credit Card Fraud Detection — A Finance and Risk Management Perspective
+# Credit Card Fraud Detection: A Finance and Risk Management Perspective
 
 ---
 
-## 🧩 Introduction — Why This Matters
+## Introduction: Why This Matters
 
 Credit card fraud costs financial institutions billions each year, eroding both profits and customer trust.  
 The earlier fraud is detected, the less financial loss is incurred.
@@ -11,7 +11,7 @@ In this project, I approached fraud detection **not simply as a machine learning
 
 ---
 
-## 🚀 The Challenge — Detecting a Needle in a Haystack
+## The Challenge: Detecting a Needle in a Haystack
 
 Fraudulent transactions account for **less than 0.2%** of all transactions — an extreme class imbalance.
 
@@ -23,7 +23,7 @@ Thus, the core challenge was:
 
 ---
 
-## 🛠️ My Approach — Step by Step
+## My Approach: Step by Step
 
 ### Step 1: Understanding the Data
 - Used an anonymized credit card dataset with PCA-transformed features (V1–V28) + Amount.
@@ -43,7 +43,7 @@ Thus, the core challenge was:
 
 ---
 
-## ⚠️ A Surprise — The Leakage Problem
+## A Surprise: The Leakage Problem
 
 During early experimentation, I discovered that the model was **perfectly predicting** frauds.  
 This triggered a red flag: *“Is there leakage?”*
@@ -55,7 +55,7 @@ Always check input features carefully before training. Data leakage is silent bu
 
 ---
 
-## 🔥 Real Results — After Fixing and Improving
+## Real Results: After Fixing and Improving
 
 - **Mean Cross-Validated F1 Score:** ~84%
 - **ROC AUC Score:** High — showing strong separation between fraud and normal transactions.
@@ -63,7 +63,7 @@ Always check input features carefully before training. Data leakage is silent bu
 
 ---
 
-## 📊 Key Metrics Evaluated
+## Key Metrics Evaluated
 
 | Metric | Why Used |
 |:-------|:---------|
@@ -74,7 +74,7 @@ Always check input features carefully before training. Data leakage is silent bu
 
 ---
 
-## 📈 Visual Analysis
+## Visual Analysis
 
 ### 1. Class Distribution
 This plot shows the class distribution in the training data.  
@@ -128,7 +128,7 @@ Thus, I recommend:
 
 ---
 
-## 🛤️ Next Steps
+## Next Steps
 
 - Use **SMOTE** to further balance training data.
 - Experiment with **XGBoost** or **LightGBM** for even better precision-recall tradeoffs.
@@ -137,7 +137,7 @@ Thus, I recommend:
 
 ---
 
-# 📚 Lessons Learned
+# Lessons Learned
 
 - Data preprocessing must be rigorous to avoid silent data leakage.
 - Finance projects must think beyond accuracy — business risk must guide model decisions.
